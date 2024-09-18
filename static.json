@@ -1,7 +1,9 @@
 {
-  "root": "./build",
-  "clean_urls": false,
-  "routes": {
-    "/**": "index.html"
-  }
+  "redirects": [
+    {
+      "source": "/*",
+      "destination": "/index.html",
+      "status": 200
+    }
+  ]
 }
