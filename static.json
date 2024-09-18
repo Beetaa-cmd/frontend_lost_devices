@@ -1,9 +1,11 @@
 {
-  "redirects": [
-    {
-      "source": "/*",
-      "destination": "/index.html",
-      "status": 200
+  "headers": {
+    "/**": {
+      "Access-Control-Allow-Origin": "*"
     }
+  },
+  "redirects": [
+    { "source": "/api/*", "destination": "/api", "type": 200 },
+    { "source": "/*", "destination": "/index.html", "type": 200 }
   ]
 }
